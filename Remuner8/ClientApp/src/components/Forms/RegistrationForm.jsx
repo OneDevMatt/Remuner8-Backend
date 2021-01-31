@@ -11,7 +11,7 @@ class RegistrationForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      step: 1,
+      step: 3,
       data: {
         email: '',
         firstName: '',
@@ -142,7 +142,7 @@ class RegistrationForm extends Component {
           />
         );
       default:
-        break;
+        return <h1>ERROR 403 Forbidden</h1>
     }
   }
 }
